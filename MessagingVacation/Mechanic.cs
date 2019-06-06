@@ -18,6 +18,11 @@ namespace MessagingVacation
             throw new NotImplementedException();
         }
 
+        internal void PrepareVacation(Bus bus)
+        {
+            throw new NotImplementedException();
+        }
+
         internal void CheckTires(Bus bus)
         {
             throw new NotImplementedException();
