@@ -11,7 +11,7 @@ namespace MessagingVacation
 
         public Bus Bus { get; }
 
-        public void PrepareVacation(Mechanic mechanic)
+        public void PrepareVacation(IMechanic mechanic)
         {
             mechanic.CheckBrakes(Bus);
             mechanic.CheckEngine(Bus);
