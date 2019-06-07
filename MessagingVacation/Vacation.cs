@@ -16,9 +16,9 @@ namespace MessagingVacation
 
         public void PrepareVacation(Mechanic mechanic, TravelAgent travelAgent, Chef chef)
         {
-            mechanic.PrepareVacation(Bus);
-            travelAgent.BookHotel(Tourists);
-            chef.PrepareMenu(Tourists);
+            mechanic.Prepare(Bus);
+            travelAgent.Prepare(Tourists);
+            chef.Prepare(Tourists);
         }
     }
 }

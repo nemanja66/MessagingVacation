@@ -12,5 +12,10 @@ namespace MessagingVacation
         {
             throw new NotImplementedException();
         }
+
+        internal void Prepare(List<Tourist> tourists)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
