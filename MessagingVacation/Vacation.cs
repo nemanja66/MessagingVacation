@@ -14,10 +14,11 @@ namespace MessagingVacation
         public Bus Bus { get; }
         public List<Tourist> Tourists { get; }
 
-        public void PrepareVacation(Mechanic mechanic, TravelAgent travelAgent)
+        public void PrepareVacation(Mechanic mechanic, TravelAgent travelAgent, Chef chef)
         {
             mechanic.PrepareVacation(Bus);
             travelAgent.BookHotel(Tourists);
+            chef.PrepareMenu(Tourists);
         }
     }
 }
