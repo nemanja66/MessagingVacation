@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace MessagingVacation
 {
-    class Program
+    public class Equipment
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
