@@ -8,6 +8,6 @@ namespace MessagingVacation
 {
     public interface IOrganizer
     {
-
+        void Organize(Party party);
     }
 }
