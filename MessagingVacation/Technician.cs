@@ -18,5 +18,10 @@ namespace MessagingVacation
         {
             throw new NotImplementedException();
         }
+
+        internal void SetupEquipment(Equipment equipment)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

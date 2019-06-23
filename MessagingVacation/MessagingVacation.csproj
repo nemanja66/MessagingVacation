@@ -42,7 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chef.cs" />
+    <Compile Include="DiscJockey.cs" />
     <Compile Include="Equipment.cs" />
+    <Compile Include="Guest.cs" />
+    <Compile Include="ITechnician.cs" />
     <Compile Include="Party.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Technician.cs" />

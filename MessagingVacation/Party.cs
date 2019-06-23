@@ -1,22 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MessagingVacation
 {
     public class Party
     {
         private readonly Equipment equipment;
-        public Party(Equipment equipment)
+        private readonly IEnumerable<Guest> guests;
+
+        public Party(Equipment equipment, IEnumerable<Guest> guests)
         {
             this.equipment = equipment ?? throw new ArgumentNullException("equipment");
+            this.guests = guests ?? throw new ArgumentNullException("guests");
         }
 
-        public Equipment Equipment { get { return equipment; } }
-
-        public void OrganizeParty(Technician technician)
+        public void OrganizeParty(Technician technician, DiscJockey discJockey, Chef chef)
         {
-            technician.SetupSpeakers(Equipment);
-            technician.SetupMixer(Equipment);
-            technician.SetupLighting(Equipment);
+            technician.SetupEquipment(equipment);
+            discJockey.CreateSongList(guests);
+            chef.PrepareFood(guests);
         }
     }
 }
