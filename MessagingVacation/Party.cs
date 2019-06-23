@@ -14,11 +14,27 @@ namespace MessagingVacation
             this.guests = guests ?? throw new ArgumentNullException("guests");
         }
 
-        public void OrganizeParty(Technician technician, DiscJockey discJockey, Chef chef)
+        public void OrganizeParty(IEnumerable<IOrganizer> organizers)
         {
-            technician.Organize(equipment);
-            discJockey.Organize(guests);
-            chef.Organize(guests);
+            foreach(var organizer in organizers)
+            {
+                switch (organizer)
+                {
+                    case Technician technician:
+                        technician.Organize(equipment);
+                        break;
+                    case Chef chef:
+                        chef.Organize(guests);
+                        break;
+                    case DiscJockey discJockey:
+                        discJockey.Organize(guests);
+                        break;
+                    default:
+                        throw new ArgumentException(
+                            message: "organizer not recognized",
+                            paramName: nameof(organizer));
+                }
+            }
         }
     }
 }

@@ -2,7 +2,7 @@
 
 namespace MessagingVacation
 {
-    public class Technician
+    public class Technician: IOrganizer
     {
         internal void SetupSpeakers(Equipment equipment)
         {

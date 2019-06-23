@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MessagingVacation
 {
-    public class DiscJockey
+    public class DiscJockey: IOrganizer
     {
         internal void CreateSongList(IEnumerable<Guest> guests)
         {

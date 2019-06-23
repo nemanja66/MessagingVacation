@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MessagingVacation
 {
-    public class Chef
+    public class Chef: IOrganizer
     {
         internal void Organize(IEnumerable<Guest> guests)
         {
