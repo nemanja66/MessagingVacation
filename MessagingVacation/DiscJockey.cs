@@ -9,5 +9,10 @@ namespace MessagingVacation
         {
             throw new NotImplementedException();
         }
+
+        internal void Organize(IEnumerable<Guest> guests)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

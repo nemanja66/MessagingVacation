@@ -5,7 +5,7 @@ namespace MessagingVacation
 {
     public class Chef
     {
-        internal void PrepareFood(IEnumerable<Guest> guests)
+        internal void Organize(IEnumerable<Guest> guests)
         {
             throw new NotImplementedException();
         }

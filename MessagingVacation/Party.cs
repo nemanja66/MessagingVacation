@@ -16,9 +16,9 @@ namespace MessagingVacation
 
         public void OrganizeParty(Technician technician, DiscJockey discJockey, Chef chef)
         {
-            technician.SetupEquipment(equipment);
-            discJockey.CreateSongList(guests);
-            chef.PrepareFood(guests);
+            technician.Organize(equipment);
+            discJockey.Organize(guests);
+            chef.Organize(guests);
         }
     }
 }
