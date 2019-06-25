@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MessagingVacation
+﻿namespace MessagingVacation
 {
-    public interface IOrganizer
+    public interface IOrganizer<T>
     {
-        void Organize(Party party);
+        void Organize(T party);
     }
 }

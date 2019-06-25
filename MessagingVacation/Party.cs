@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MessagingVacation
 {
-    public class Party
+    public class Party: IGuestsOrganizable, IEquipmentOrganizable
     {
         private readonly Equipment equipment;
         private readonly IEnumerable<Guest> guests;
@@ -17,7 +17,7 @@ namespace MessagingVacation
         public Equipment Equipment { get { return equipment; } }
         public IEnumerable<Guest> Guests { get { return guests; } }
 
-        public void OrganizeParty(IEnumerable<IOrganizer> organizers)
+        public void OrganizeParty(IEnumerable<IOrganizer<Party> organizers)
         {
             foreach(var organizer in organizers)
             {

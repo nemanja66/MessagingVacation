@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 namespace MessagingVacation
 {
-    public class Chef: IOrganizer
+    public class Chef: IOrganizer<IGuestsOrganizable>
     {
-        internal void Organize(IEnumerable<Guest> guests)
+        public void Organize(IGuestsOrganizable guestsOrganizable)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
